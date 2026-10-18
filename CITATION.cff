@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying article."
+title: "Residual Human States: secondary reanalysis code"
+type: software
+license: MIT
+authors:
+  - family-names: Herrera-Poyatos
+    given-names: David
+  - family-names: Peláez-González
+    given-names: Carlos
+  - family-names: Zuheros
+    given-names: Cristina
+  - family-names: Herrera
+    given-names: Francisco
+repository-code: "https://github.com/ari-dasci/S-ResidualHumanStates"
+preferred-citation:
+  type: article
+  title: "What Human–AI Interaction Leaves Behind: Residual Human States—A Trajectory-Based Framework and Multi-Study Analysis"
+  authors:
+    - family-names: Herrera-Poyatos
+      given-names: David
+    - family-names: Peláez-González
+      given-names: Carlos
+    - family-names: Zuheros
+      given-names: Cristina
+    - family-names: Herrera
+      given-names: Francisco
+  year: 2026

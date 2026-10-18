@@ -1,0 +1,34 @@
+R version 4.3.3 (2024-02-29)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 24.04.5 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.0 
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.0
+
+locale:
+[1] C
+
+time zone: Europe/Madrid
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] dqrng_0.3.2             fwildclusterboot_0.14.3 clubSandwich_0.5.10    
+[4] sandwich_3.1-0          readr_2.1.5            
+
+loaded via a namespace (and not attached):
+ [1] Matrix_1.6-5         bit_4.0.5            compiler_4.3.3      
+ [4] crayon_1.5.2         gtools_3.9.5         tidyselect_1.2.0    
+ [7] Rcpp_1.0.12          collapse_2.0.10      parallel_4.3.3      
+[10] lattice_0.22-5       R6_2.5.1             generics_0.1.3      
+[13] Formula_1.2-5        MASS_7.3-60.0.1      tibble_3.2.1        
+[16] summclust_0.7.2      pillar_1.9.0         tzdb_0.4.0          
+[19] rlang_1.1.3          utf8_1.2.4           bit64_4.0.5         
+[22] cli_3.6.2            magrittr_2.0.3       grid_4.3.3          
+[25] vroom_1.6.5          hms_1.1.3            lifecycle_1.0.4     
+[28] vctrs_0.6.5          glue_1.7.0           zoo_1.8-12          
+[31] fansi_1.0.5          dreamerr_1.2.3       JuliaConnectoR_1.1.3
+[34] tools_4.3.3          pkgconfig_2.0.3     

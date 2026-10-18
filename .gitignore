@@ -1,0 +1,44 @@
+# Local source data and generated analyses (never publish participant records)
+/data/
+/output/
+wide_strongest.csv
+
+# Data files saved outside the default directories
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.rds
+*.RData
+*.rda
+# Reviewed aggregate reference tables are deliberately versioned
+!/expected_output/**/*.csv
+
+# Downloads and submission packages
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+/dist/
+
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key
+
+# R, Python, editors and operating systems
+.Rhistory
+.Ruserdata
+.Rproj.user/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+__MACOSX/
+Thumbs.db
+.vscode/
+.idea/
+*~
+*.swp

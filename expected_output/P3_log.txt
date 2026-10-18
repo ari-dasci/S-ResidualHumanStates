@@ -1,0 +1,124 @@
+
+augmented   control   vanilla 
+       14        17        13 
+Part2Tot : n = 2848 | coefficients reproduce
+
+augmented   control   vanilla 
+       14        17        13 
+Part3Tot : n = 2848 | coefficients reproduce
+   outcome estimand     est      se       lo      hi         p
+1 Part2Tot      T-B 0.22426 0.03418 0.155325 0.29320 5.589e-08
+2 Part3Tot      T-B 0.05003 0.02331 0.003018 0.09704 3.754e-02
+GPT Base exam, normal-reference p = 0.01543475 
+Too guarantee reproducibility, don't forget to set a global random seed
+**both** via `set.seed()` and `dqrng::dqset.seed()`.
+This message is displayed once every 8 hours.
+Warning message:
+Please note that the seeding behavior for random number generation for
+`boottest()` has changed with `fwildclusterboot` version 0.13.
+
+It will no longer be possible to exactly reproduce results produced by versions
+lower than 0.13.
+
+If your prior results were produced under sufficiently many bootstrap
+iterations, none of your conclusions will change. For more details about this
+change, please read the notes in
+[news.md](https://cran.r-project.org/web/packages/fwildclusterboot/news/news.html).
+This warning is displayed once per session. 
+   outcome estimand      est se_CR1 p_CR1_df43 se_CR2 df_Satt  lo_CR2 hi_CR2
+1 Part2Tot  GPTBase  0.13702 0.0310   6.55e-05 0.0412   10.86  0.0462 0.2279
+2 Part3Tot  GPTBase -0.05435 0.0224   1.97e-02 0.0315   10.86 -0.1237 0.0150
+3 Part2Tot GPTTutor  0.36128 0.0317   1.45e-14 0.0400   13.78  0.2753 0.4472
+4 Part3Tot GPTTutor -0.00432 0.0134   7.49e-01 0.0174   13.78 -0.0417 0.0331
+5 Part2Tot      T-B  0.22426 0.0342   5.59e-08 0.0449    9.86  0.1241 0.3244
+6 Part3Tot      T-B  0.05003 0.0233   3.75e-02 0.0315    9.86 -0.0203 0.1204
+     p_CR2 p_WCR_own   t_fw  p_WCR ci_lo_WCR ci_hi_WCR
+1 6.89e-03    0.0026  4.422 0.0025    0.0581    0.2301
+2 1.12e-01    0.1070 -2.422 0.1039   -0.1163    0.0124
+3 3.69e-07    0.0000 11.387 0.0000    0.2740    0.4512
+4 8.08e-01    0.7872 -0.323 0.7814   -0.0395    0.0303
+5 5.61e-04    0.0044  6.561 0.0045    0.1001    0.3200
+6 1.44e-01    0.1284  2.146 0.1312   -0.0156    0.1226
+   outcome estimand    p_CR2 p_CR2_holm  p_WCR p_WCR_holm
+1 Part2Tot  GPTBase 6.89e-03   2.76e-02 0.0025     0.0125
+2 Part3Tot  GPTBase 1.12e-01   3.37e-01 0.1039     0.3117
+3 Part2Tot GPTTutor 3.69e-07   2.22e-06 0.0000     0.0000
+4 Part3Tot GPTTutor 8.08e-01   8.08e-01 0.7814     0.7814
+5 Part2Tot      T-B 5.61e-04   2.80e-03 0.0045     0.0180
+6 Part3Tot      T-B 1.44e-01   3.37e-01 0.1312     0.3117
+               spec    n  outcome estimand     est     se       lo       hi
+1              full 2848 Part3Tot      T-B  0.0500 0.0233  0.00302  0.09704
+2              full 2848 Part3Tot  GPTBase -0.0543 0.0224 -0.09960 -0.00909
+3      no_teacherFE 2848 Part3Tot      T-B  0.0264 0.0203 -0.01461  0.06734
+4      no_teacherFE 2848 Part3Tot  GPTBase -0.0200 0.0210 -0.06234  0.02243
+5       no_graderFE 2849 Part3Tot      T-B  0.0415 0.0219 -0.00273  0.08572
+6       no_graderFE 2849 Part3Tot  GPTBase -0.0445 0.0233 -0.09147  0.00249
+7  gpa_session_year 2849 Part3Tot      T-B  0.0153 0.0197 -0.02454  0.05510
+8  gpa_session_year 2849 Part3Tot  GPTBase -0.0149 0.0220 -0.05925  0.02941
+9        unadjusted 2899 Part3Tot      T-B  0.0283 0.0351 -0.04242  0.09903
+10       unadjusted 2899 Part3Tot  GPTBase -0.0345 0.0334 -0.10194  0.03288
+        p
+1  0.0375
+2  0.0197
+3  0.2014
+4  0.3478
+5  0.0652
+6  0.0628
+7  0.4432
+8  0.5009
+9  0.4241
+10 0.3074
+            
+             augmented control vanilla
+  teacher_1          0       0       1
+  teacher_10         1       1       0
+  teacher_11         0       1       0
+  teacher_12         0       0       1
+  teacher_13         1       2       0
+  teacher_14         0       1       1
+  teacher_15         2       1       1
+  teacher_16         0       0       1
+  teacher_17         1       3       0
+  teacher_18         1       1       0
+  teacher_19         1       1       2
+  teacher_2          1       3       0
+  teacher_4          2       1       1
+  teacher_5          2       2       0
+  teacher_6          2       0       2
+  teacher_7          0       0       1
+  teacher_8          0       0       1
+  teacher_9          0       0       1
+R version 4.3.3 (2024-02-29)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 24.04.5 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.0 
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.0
+
+locale:
+[1] C
+
+time zone: Europe/Madrid
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] dqrng_0.3.2             fwildclusterboot_0.14.3 clubSandwich_0.5.10    
+[4] sandwich_3.1-0          readr_2.1.5            
+
+loaded via a namespace (and not attached):
+ [1] Matrix_1.6-5         bit_4.0.5            compiler_4.3.3      
+ [4] crayon_1.5.2         gtools_3.9.5         tidyselect_1.2.0    
+ [7] Rcpp_1.0.12          collapse_2.0.10      parallel_4.3.3      
+[10] lattice_0.22-5       R6_2.5.1             generics_0.1.3      
+[13] Formula_1.2-5        MASS_7.3-60.0.1      tibble_3.2.1        
+[16] summclust_0.7.2      pillar_1.9.0         tzdb_0.4.0          
+[19] rlang_1.1.3          utf8_1.2.4           bit64_4.0.5         
+[22] cli_3.6.2            magrittr_2.0.3       grid_4.3.3          
+[25] vroom_1.6.5          hms_1.1.3            lifecycle_1.0.4     
+[28] vctrs_0.6.5          glue_1.7.0           zoo_1.8-12          
+[31] fansi_1.0.5          dreamerr_1.2.3       JuliaConnectoR_1.1.3
+[34] tools_4.3.3          pkgconfig_2.0.3     
